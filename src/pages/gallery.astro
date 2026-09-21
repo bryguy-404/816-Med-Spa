@@ -35,7 +35,7 @@ const galleryItems = [
 
 <BaseLayout
   title="Gallery | 816 Med Spa"
-  description="View before and after treatment images from 816 Med Spa in Kansas City."
+  description="View before and after treatment images and take a video tour of 816 Med Spa in Kansas City."
   canonical="https://www.816medspa.com/gallery/"
 >
   <SiteHeader />
@@ -132,6 +132,54 @@ const galleryItems = [
                 </figure>
               ))
             }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream py-16 lg:py-24" aria-labelledby="tour-heading">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2 lg:gap-20">
+          <div data-reveal>
+            <p class="mb-4 font-sans-wide text-[11px] font-semibold tracking-[0.3em] uppercase text-gold">
+              A Look Inside
+            </p>
+            <h2
+              id="tour-heading"
+              class="font-display text-4xl italic leading-tight text-ink sm:text-5xl lg:text-6xl"
+            >
+              step inside 816.
+            </h2>
+            <p class="mt-6 max-w-md text-base leading-relaxed text-ink/80 sm:text-lg">
+              Get to know our space before your visit. Take a quick walk through our
+              welcoming lobby, treatment rooms, and private patient parking.
+            </p>
+            <p id="tour-description" class="mt-5 text-sm leading-relaxed text-ink/70">
+              A 77-second tour of 816 Med Spa in Kansas City. Press play to explore.
+            </p>
+            <a
+              href="/contact-us/"
+              class="mt-8 inline-flex items-center gap-3 border-b border-gold/50 pb-2 font-sans-wide text-[11px] font-semibold tracking-[0.18em] uppercase text-gold transition-colors hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            >
+              Plan your visit <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="mx-auto w-full max-w-[360px]" data-reveal style="--reveal-delay: 120ms">
+            <video
+              class="block aspect-[9/16] h-auto w-full rounded-lg bg-espresso shadow-lg"
+              width="1080"
+              height="1920"
+              controls
+              playsinline
+              preload="none"
+              poster="/images/gallery/med-spa-tour-poster.jpg"
+              aria-labelledby="tour-heading"
+              aria-describedby="tour-description"
+            >
+              <source src="/videos/816-med-spa-tour.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+              <a href="/videos/816-med-spa-tour.mp4">Watch the 816 Med Spa tour.</a>
+            </video>
           </div>
         </div>
       </div>
